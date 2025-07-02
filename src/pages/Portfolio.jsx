@@ -4,7 +4,7 @@ export default function Portfolio() {
     const proj1 = {
         title: "CartMates",
         description: "Web App",
-        blurb: "blurbblurbblurb",
+        blurb: "In Progress...",
         technologies: ["React", "MongoDB", "Node.js", "Express"],
         link: "https://github.com/alexisylee",
         githubLink: "https://github.com/alexisylee"

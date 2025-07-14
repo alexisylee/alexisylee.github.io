@@ -6,7 +6,7 @@ export default function PortfolioCard({ proj }) {
                 <div className="text-dracula-pink font-semibold text-2xl">{proj.title}</div>
                 <div className="text-#fbfbf5 text-md">{proj.description}</div>
                 <div className="text-d-foreground text-md mt-4">{proj.blurb}</div>
-                <div className="text-cyan font-semibold mt-6 mb-2 text-lg">Technologies</div>
+                <div className="text-cyan font-semibold mt-6 mb-2 text-lg">Languages & Technologies</div>
                 <div className="">
                     <ul className="flex items-start">
                         {proj.technologies.map((tech, index) => (

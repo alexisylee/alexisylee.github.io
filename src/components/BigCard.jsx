@@ -18,7 +18,7 @@ export default function BigCard({ info }) {
                     </div>
                 </div>
 
-                <div className="pt-[0.1rem] pl-[0.4rem] pb-[0.1rem] pr-[0.4rem] text-d-foreground rounded-2xl bg-dracula-pink text-[0.80rem] overflow-clip">
+                <div className="pt-[0.1rem] pl-[0.4rem] pb-[0.1rem] pr-[0.4rem] text-d-foreground rounded-2xl bg-dracula-pink text-[0.80rem] whitespace-nowrap">
                     {info.date}
                 </div>
 

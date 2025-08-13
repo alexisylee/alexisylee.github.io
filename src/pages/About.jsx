@@ -3,9 +3,9 @@ import BigCard from "../components/BigCard";
 
 export default function About() {
     const skillsData = [
-        { category: "Languages", items: ["Java", "C++", "Python", "C", "JavaScript", "CSS", "HTML"] },
-        { category: "Frameworks & Libraries", items: ["React", "Node.js", "Spring Boot", "Next.js", "Tailwind CSS", "Express"] },
-        { category: "Tools & Platforms", items: ["Git", "MongoDB", "Linux"] }
+        { category: "Languages", items: ["Java", "C++", "Python", "C", "JavaScript", "TypeScript", "CSS", "HTML", "SQL"] },
+        { category: "Frameworks & Libraries", items: ["React", "Node.js", "Spring Boot", "PostgreSQL", "Next.js", "Tailwind", "Express"] },
+        { category: "Tools & Platforms", items: ["Git", "Linux"] }
     ];
 
     const educationInfo = {
@@ -16,13 +16,21 @@ export default function About() {
         bulletpoints: ["Algorithms", "Machine Structure and Programming", "Software Engineering", "Data Structures"]
     }
 
+    const experienceInfo0 = {
+        title: "Research Intern",
+        description: "Pusan National University Programming Languages Lab",
+        date: "Jun 2025 - Aug 2025",
+        bulletpoints: ["Designed and implemented K-Prolog programming language, a Korean-localized Prolog variant with translated predicates, custom Hangul tokenization, and educational grammar adaptations", 
+                        "Built complete interpreter from scratch and published research findings in conference proceedings", 
+                        "Developed interactive development environment with integrated GUI terminal and file management system, deployed as the primary programming platform for university coursework "]
+    }
+
     const experienceInfo1 = {
         title: "Software Developer",
         description: "Tufts Bioinformatics and Computational Biology Group",
         date: "Jan 2025 - Present",
-        bulletpoints: ["Build archival tool that validates metadata and generates compressed BagIt-compliant packages", 
-                        "Developed metadata validation system for MEDFORD language with custom rules and file operations", 
-                        "Created automated test suite with 50+ tests used by 10+ team members"]
+        bulletpoints: ["Implement research data archival tool with automated metadata validation, standardized directory organization, and MD5 checksum generation for BagIt format compliance and long-term digital preservation", 
+                        "Develop 50+ automated tests integrated with CI pipelines, enabling scalable testing across 10+ researchers"]
     }
 
     const experienceInfo2 = {
@@ -52,6 +60,7 @@ export default function About() {
             ))}
 
             <h1 className="text-cyan font-semibold text-xl mt-14 mb-4">Experience</h1>
+            <BigCard key={experienceInfo0.title} info={experienceInfo0}></BigCard>
             <BigCard key={experienceInfo1.title} info={experienceInfo1}></BigCard>
             <BigCard key={experienceInfo2.title} info={experienceInfo2}></BigCard>
 

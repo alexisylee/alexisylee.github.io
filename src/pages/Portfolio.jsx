@@ -13,7 +13,7 @@ export default function Portfolio() {
     const proj2 = {
         title: "K-Prolog",
         description: "Programming Language",
-        blurb: "A functional logic programming language with native Korean syntax parsing andA functional logic programming language with native Korean predicate support and syntax parsing, featuring extensive Prolog compatibility.",
+        blurb: "A functional logic programming language with native Korean predicate support and syntax parsing, featuring extensive Prolog compatibility.",
         technologies: ["Python", "Prolog", "PyInstaller"],
         link: "https://github.com/yonghun8343/k-prolog",
         githubLink: "https://github.com/yonghun8343/k-prolog"

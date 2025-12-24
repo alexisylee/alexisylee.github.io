@@ -31,7 +31,7 @@ export default function Portfolio() {
     return(
         <div className="container">
             <h1 className="text-dracula-purple font-bold text-2xl mb-6">Portfolio</h1>
-            <PortfolioCard key={proj0.title} proj={proj1}></PortfolioCard>
+            <PortfolioCard key={proj0.title} proj={proj0}></PortfolioCard>
             <PortfolioCard key={proj1.title} proj={proj1}></PortfolioCard>
             <PortfolioCard key={proj2.title} proj={proj2}></PortfolioCard>
         </div>

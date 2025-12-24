@@ -1,6 +1,15 @@
 import PortfolioCard from "../components/PortfolioCard"
 
 export default function Portfolio() {
+    const proj0 = {
+        title: "Concurrent Memory Allocator",
+        description: "",
+        blurb: "  A thread-safe memory allocator featuring segregated free lists with 8 size classes, bidirectional coalescing for fragmentation reduction, and fine-grained per-size-class locking for high concurrency.",
+        technologies: ["C", "ThreadSanitizer"],
+        link: "https://github.com/alexisylee/alloc",
+        githubLink: "https://github.com/alexisylee/alloc"
+    }
+
     const proj1 = {
         title: "lint40",
         description: "VSCode Extension",
@@ -22,6 +31,7 @@ export default function Portfolio() {
     return(
         <div className="container">
             <h1 className="text-dracula-purple font-bold text-2xl mb-6">Portfolio</h1>
+            <PortfolioCard key={proj0.title} proj={proj1}></PortfolioCard>
             <PortfolioCard key={proj1.title} proj={proj1}></PortfolioCard>
             <PortfolioCard key={proj2.title} proj={proj2}></PortfolioCard>
         </div>
